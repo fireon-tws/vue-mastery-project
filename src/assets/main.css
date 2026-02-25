@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  /* Custom Branding for your Portfolio */
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+
+  /* Modern UI spacing */
+  --spacing-container: 2rem;
+}
+
+/* Base styles using Native CSS Nesting */
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+
+    &.dark {
+      @apply bg-slate-950 text-slate-50;
+    }
+  }
+}
